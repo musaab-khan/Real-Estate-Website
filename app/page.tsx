@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Sample from "./components/Sample";
 import Checker from './components/Checker'
 import Searcher from "./components/Searcher";
+import Explore from "./components/Explore";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero></Hero>
       <Searcher></Searcher>
       <About></About>
+      <Explore></Explore>
       <Checker></Checker>
       <Sample></Sample>
     </div>

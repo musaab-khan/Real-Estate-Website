@@ -14,12 +14,9 @@ const About = () => {
     zoomers.forEach((element, index) => {
       if (element) {
         const rect = element.getBoundingClientRect();
-        const midViewport = window.innerHeight * 0.4;
+        const appearingHeight = window.innerHeight * 0.65;
 
-        // Store the visibility of each element in the state
-        newVisibilityState[index] = (rect.top >= midViewport);
-        if(index==0)
-        console.log("mid:",midViewport," - element-top:",rect.top)
+        newVisibilityState[index] = (rect.top <= appearingHeight);
       }
     });
 
@@ -28,7 +25,7 @@ const About = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Trigger on mount for pre-existing scroll position
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -43,8 +40,9 @@ const About = () => {
           src={image}
           alt=""
           className={`
-             
-
+             ${
+            visibleElements[0] ? 'animate-zoomIn delay-600' : 'animate-zoomOut'
+          }
              rounded-2xl lg:w-[500px] lg:h-[600px] zoomer`}
         />
       </div>
@@ -76,8 +74,8 @@ const About = () => {
         </p>
         <button
           className={`${
-            visibleElements[4] ? 'animate-zoomIn delay-800' : 'animate-zoomOut'
-          } bg-red-600 text-md px-10 py-4 text-white font-semibold rounded-xl hover:bg-black dark:hover:bg-red-700 cursor-pointer transform hover:scale-105 transition-transform duration-300 zoomer`}
+            visibleElements[4] ? 'opacity-100' : 'opacity-0'
+          } bg-red-600 text-md px-10 py-4 text-white font-semibold rounded-xl hover:bg-black dark:hover:bg-red-700 cursor-pointer transform hover:scale-105 transition-opacity duration-[1s] ease zoomer`}
         >
           VIEW MORE
         </button>
