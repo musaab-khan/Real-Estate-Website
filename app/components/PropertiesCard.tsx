@@ -2,17 +2,18 @@
 import React from 'react'
 import Image from 'next/image'
 
-interface CardProps {
-    imageSrc: string; // Accepts the first image's source as a prop
+interface PropertiesCardProps {
+    imageSrc: string;
+    propClass: string
   }
 
-const Card: React.FC<CardProps> = ({ imageSrc }) => {
+const PropertiesCard: React.FC<PropertiesCardProps> = ({ imageSrc,propClass }) => {
   return (
-    <div className="bg-white dark:bg-white rounded-xl w-full  ">
+    <div className={`bg-white dark:bg-white rounded-xl w-full ${propClass} `}>
         <div id="image-box" className="bg-cover bg-center h-[250px] rounded-xl p-4 flex flex-col justify-between items-end" style={{ backgroundImage: `url(${imageSrc})` }}>
             <div id="top" className="flex justify-between items-end w-full">
                 <div>
-                    <button className="px-3 py-1 bg-red-600 hover:bg-white hover:text-black text-white rounded-full text-[13px] ">Featured</button>
+                    <button className="px-3 py-1 bg-red-600 hover:bg-white hover:text-black text-white rounded-full text-[13px]">Featured</button>
                 </div>
                 <div className="flex justify-between items-center gap-3">
                     <button className="px-3 py-1 bg-red-600 hover:bg-white hover:text-black text-white rounded-full text-[13px]">Sales</button>
@@ -70,4 +71,4 @@ const Card: React.FC<CardProps> = ({ imageSrc }) => {
   )
 }
 
-export default Card
+export default PropertiesCard

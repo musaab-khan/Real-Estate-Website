@@ -4,6 +4,12 @@ import Searcher from "./components/Searcher";
 import About from "./components/About";
 import Explore from "./components/Explore";
 import Properties from "./components/Properties";
+import Services from "./components/Services";
+import Testimonials from "./components/Testimonials";
+import MessageForm from "./components/MessageForm";
+import Footer from "./components/Footer";
+import BackToTop from "./components/BackToTop";
+import ToggleMode from "./components/ToggleMode";
 import Sample from "./components/Sample";
 import Checker from './components/Checker'
 
@@ -16,6 +22,12 @@ export default function Home() {
       <About></About>
       <Explore></Explore>
       <Properties></Properties>
+      <Services></Services>
+      <Testimonials></Testimonials>
+      <MessageForm></MessageForm>
+      <Footer></Footer>
+      <BackToTop></BackToTop>
+      <ToggleMode></ToggleMode>
       <Checker></Checker>
       <Sample></Sample>
     </div>

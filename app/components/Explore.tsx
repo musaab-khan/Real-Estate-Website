@@ -1,5 +1,6 @@
 'use client'
 import React,{useState,useEffect} from 'react'
+import visibilityHook from './visibilityHook';
 
 const Explore = () => {
     const [visibleElements, setVisibleElements] = useState<Record<string, boolean>>({});
@@ -11,11 +12,14 @@ const Explore = () => {
       zoomers.forEach((element, index) => {
         if (element) {
           const rect = element.getBoundingClientRect();
-          const appearingHeight = -126;
+          // const appearingHeight = -126;
+          const appearingHeight = window.innerHeight*0.025;
   
           newVisibilityState[index] = (rect.top <= appearingHeight);
-
-        }
+          if(index===0){
+            // console.log("Explore : ",appearingHeight," Top: ",rect.top," Bottom: ",rect.bottom)
+          }
+         }
       });
   
       setVisibleElements(newVisibilityState);

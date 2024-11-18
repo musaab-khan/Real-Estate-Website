@@ -21,7 +21,7 @@ const Searcher = () => {
     <div className={`light bg-transparent z-10 ${
           isVisible ? "animate-zoomIn" : "animate-zoomOut"
         }`} id='searchProperty'>
-        <div data-aos="zoom-in" id="form" className="light bg-white lg:w-[70%] w-full m-auto grid lg:grid-cols-4 grid-cols-1 justify-center items-center gap-6 p-8 rounded-xl -mt-14 aos-init aos-animate">
+        <div id="form" className="light bg-white lg:w-[70%] w-full m-auto grid lg:grid-cols-4 grid-cols-1 justify-center items-center gap-6 p-8 rounded-xl -mt-14 ">
             <div className="w-full">
                 <h1 className="text-black font-semibold dark:text-black">LOCATION</h1>
                 <input type="text" placeholder="Enter an address, state, city or pincode" className="bg-white p-2 w-full mt-2 border-b-[1px] border-[#c9c7c1]"/>
