@@ -1,11 +1,11 @@
-import Image from "next/image";
 import Navbar from "./components/Navbar";
-import About from "./components/About";
 import Hero from "./components/Hero";
+import Searcher from "./components/Searcher";
+import About from "./components/About";
+import Explore from "./components/Explore";
+import Properties from "./components/Properties";
 import Sample from "./components/Sample";
 import Checker from './components/Checker'
-import Searcher from "./components/Searcher";
-import Explore from "./components/Explore";
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
       <Searcher></Searcher>
       <About></About>
       <Explore></Explore>
+      <Properties></Properties>
       <Checker></Checker>
       <Sample></Sample>
     </div>

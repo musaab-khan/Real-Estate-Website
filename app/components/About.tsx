@@ -1,8 +1,6 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
-import image from '/public/assets/About.jpg';
 
 const About = () => {
   const [visibleElements, setVisibleElements] = useState<Record<string, boolean>>({});
@@ -14,9 +12,12 @@ const About = () => {
     zoomers.forEach((element, index) => {
       if (element) {
         const rect = element.getBoundingClientRect();
-        const appearingHeight = window.innerHeight * 0.65;
+        const appearingHeight = window.innerHeight * 0.9;
 
         newVisibilityState[index] = (rect.top <= appearingHeight);
+        if(index===0){
+          console.log(rect.top,":",appearingHeight)
+        }
       }
     });
 
@@ -35,17 +36,7 @@ const About = () => {
       className="light bg-transparent w-full m-auto lg:px-40 px-10 py-20 grid lg:grid-cols-2 grid-cols-1 justify-center items-center gap-10"
     >
       {/* Image Section */}
-      <div>
-        <Image
-          src={image}
-          alt=""
-          className={`
-             ${
-            visibleElements[0] ? 'animate-zoomIn delay-600' : 'animate-zoomOut'
-          }
-             rounded-2xl lg:w-[500px] lg:h-[600px] zoomer`}
-        />
-      </div>
+      <div className={`${visibleElements[0]?'animate-zoomIn':'animate-zoomOut'}  lg:w-[500px] lg:h-[600px] bg-cover bg-center rounded-xl `}style={{ backgroundImage: 'url("/assets/About.jpg")' }}></div>
 
       {/* Text Section */}
       <div className="flex flex-col justify-center items-start gap-8">
@@ -74,8 +65,8 @@ const About = () => {
         </p>
         <button
           className={`${
-            visibleElements[4] ? 'opacity-100' : 'opacity-0'
-          } bg-red-600 text-md px-10 py-4 text-white font-semibold rounded-xl hover:bg-black dark:hover:bg-red-700 cursor-pointer transform hover:scale-105 transition-opacity duration-[1s] ease zoomer`}
+            visibleElements[3] ? 'opacity-100' : 'opacity-0'
+          } bg-red-600 text-md px-10 py-4 text-white font-semibold rounded-xl hover:bg-black dark:hover:bg-red-700 cursor-pointer transform hover:scale-105 transition-opacity duration-[3s] ease zoomer`}
         >
           VIEW MORE
         </button>
