@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
         <nav className="light bg-[#f3f3f3] flex justify-between items-center gap-4 dark:bg-black lg:px-20 px-4 py-3 sticky top-0 z-30">
             <div className="log">
-                <img src='/assets/logo.png' alt="" className="logo lg:w-[150px] w-[120px] dark:invert" />
+                <Image src='/assets/logo.png' alt="" layout='responsive' width={1} height={1} className="logo lg:w-[150px] w-[120px] dark:invert" />
             </div>
             <ul className={`flex-row justify-between  items-center w-screen h-fit p-5 fixed top-[80px] text-center left-0 bg-slate-800 text-white gap-5 menu lg:flex lg:flex-row lg:p-0 lg:bg-transparent lg:gap-8 lg:w-fit lg:text-black lg:static dark:text-white ${menuVisibility?'':'hidden'}`} id='menu'>
                 <li className='px-3 py-2 hover:bg-red-600 text-[15px] hover:text-white rounded-md cursor-pointer font-semibold uppercase'>Home</li>

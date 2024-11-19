@@ -14,14 +14,14 @@ const Explore = () => {
                     <h1 className={`text-black text-[40px] font-semibold leading-10 mt-4 exploreZoomer ${visibleElements[1]?'animate-zoomIn':'animate-zoomOut'} dark:text-white`}>Explore most<br/>popular areas</h1>
                 </div>
                 <div className="grid lg:grid-cols-3 col-span-2 grid-cols-1 justify-center items-center gap-6">
-                    <div>
-                    <div className={`exploreZoomer ${visibleElements[2]?'animate-zoomIn':'animate-zoomOut'} h-[400px] bg-cover bg-center rounded-xl `}style={{ backgroundImage: 'url("/assets/explore-1.jpg")' }}></div>
+                    <div className='exploreZoomer'>
+                        <div className={` ${visibleElements[2]?'animate-zoomIn':'animate-zoomOut'} h-[400px] bg-cover bg-center rounded-xl`}style={{ backgroundImage: 'url("/assets/explore-1.jpg")' }}></div>
                     </div>
-                    <div className="">
-                    <div className={`exploreZoomer ${visibleElements[3]?'animate-zoomIn':'animate-zoomOut'} h-[400px] bg-cover bg-center rounded-xl `}style={{ backgroundImage: 'url("/assets/explore-1.jpg")' }}></div>
+                    <div className='exploreZoomer'>
+                        <div className={` ${visibleElements[3]?'animate-zoomIn':'animate-zoomOut'} h-[400px] bg-cover bg-center rounded-xl`}style={{ backgroundImage: 'url("/assets/explore-1.jpg")' }}></div>
                     </div>
-                    <div className="">
-                    <div className={`exploreZoomer ${visibleElements[4]?'animate-zoomIn':'animate-zoomOut'} h-[400px] bg-cover bg-center rounded-xl `}style={{ backgroundImage: 'url("/assets/explore-1.jpg")' }}></div>
+                    <div className='exploreZoomer'>
+                        <div className={` ${visibleElements[4]?'animate-zoomIn':'animate-zoomOut'} h-[400px] bg-cover bg-center rounded-xl`}style={{ backgroundImage: 'url("/assets/explore-1.jpg")' }}></div>
                     </div>
                 </div>
             </div>
