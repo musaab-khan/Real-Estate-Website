@@ -14,9 +14,7 @@ const visibilityHook = (selector: string='.zoomer', threshold: number) => {
         const appearingHeight = window.innerHeight*threshold;
 
         newVisibilityState[index] = rect.top <= appearingHeight;
-        if(index==0){
-          console.log(rect.top)
-        }
+        
       }
     });
 
@@ -25,7 +23,7 @@ const visibilityHook = (selector: string='.zoomer', threshold: number) => {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Initial check
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, [selector, threshold]);
 

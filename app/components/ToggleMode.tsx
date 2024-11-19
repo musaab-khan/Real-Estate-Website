@@ -6,7 +6,6 @@ const ToggleMode = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleTheme = () => {
-    // Toggle the `dark` class on the `<html>` element
     const htmlElement = document.documentElement;
     if (isDarkMode) {
       htmlElement.classList.remove('dark');
@@ -19,7 +18,6 @@ const ToggleMode = () => {
   };
 
   useEffect(() => {
-    // Load theme from localStorage on component mount
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
       document.documentElement.classList.add('dark');

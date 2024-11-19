@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="w-100 light dark:bg-black">
       <section
-      id="hero"
+      id="home"
       className="w-[95%] h-[600px] m-auto bg-cover bg-center rounded-xl flex justify-center flex-col items-start lg:px-28 px-10 gap-7 z-20"
       style={{
         backgroundImage: 'url("/assets/hero-bg.webp")',

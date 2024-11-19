@@ -14,7 +14,7 @@ import ToggleMode from "./components/ToggleMode";
 export default function Home() {
 
   return (
-    <div className="bg-white dark:bg-black">
+    <div className="bg-[#f3f3f3] dark:bg-black font-sans">
       <Navbar></Navbar>
       <Hero></Hero>
       <Searcher></Searcher>

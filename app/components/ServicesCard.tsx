@@ -2,8 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 
 interface ServicesCardProps {
-    imageSrc: string; // Accepts the first image's source as a prop
-    propClass: string; // Accepts the first image's source as a prop
+    imageSrc: string;
+    propClass: string;
   }
 
 const ServicesCard : React.FC<ServicesCardProps> = ({ imageSrc,propClass }) => {

@@ -2,12 +2,13 @@ import React from 'react'
 import Image from 'next/image'
 
 interface ServicesCardProps {
-    imageSrc: string; // Accepts the first image's source as a prop
+    imageSrc: string;
+     propClass: string;
   }
 
-const TestimonialsCard : React.FC<ServicesCardProps> = ({ imageSrc }) => {
+const TestimonialsCard : React.FC<ServicesCardProps> = ({ imageSrc, propClass }) => {
   return (
-    <div className="bg-white dark:bg-gray-900 hover:bg-red-100 cursor-pointer p-12 flex flex-col justify-center items-center gap-6 rounded-xl w-full">
+    <div className={`${propClass} bg-white dark:bg-gray-900 hover:bg-red-100 cursor-pointer p-12 flex flex-col justify-center items-center gap-6 rounded-xl w-full`}>
         <div className="flex justify-start items-center w-full gap-4">
             <img src={imageSrc} alt="" className="w-[70px] transform hover:scale-105 transition-transform duration-300"/>
             <div className="flex flex-col justify-center items-start gap-1">

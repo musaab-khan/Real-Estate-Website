@@ -5,26 +5,22 @@ const BackToTop = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
 
   const handleScroll = () => {
-    // Check if the window has scrolled
     if (window.scrollY > 0) {
       setHasScrolled(true);
     } else {
-      // If it has returned to the top
       setHasScrolled(false);
     }
   };
 
   const scrollToTop = () => {
     window.scrollTo({
-      top: 0, // Scroll to the top
-      behavior: 'smooth', // Smooth scrolling
+      top: 0,
+      behavior: 'smooth',
     });
   };
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
-
-    // Cleanup the event listener
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -33,9 +29,9 @@ const BackToTop = () => {
   return (
     <div
       id="icon-box"
-      onClick={scrollToTop} // Add the scrollToTop handler here
+      onClick={scrollToTop} 
       className={`${
-        hasScrolled ? 'translate-x-[-90%]' : 'translate-y-0'
+        hasScrolled ? 'translate-y-0' : 'translate-x-[-100%]'
       } bg-red-600 p-4 rounded-full hover:bg-black cursor-pointer fixed lg:bottom-12 bottom-6 right-6 lg:right-6 transition-all ease duration-1000`}
     >
       <a>
