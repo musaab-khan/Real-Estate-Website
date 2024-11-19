@@ -1,10 +1,10 @@
 'use client'
 import React from 'react'
 import ServicesCard from './ServicesCard'
-import visibilityHook from './visibilityHook'
+import useVisibilityHook from './useVisibilityHook'
 
 const Services = () => {
-  const visibleElements=visibilityHook('.serviceZoomer',0.735);
+  const visibleElements=useVisibilityHook('.serviceZoomer',0.735);
   return (
     <div className="light bg-transparent pb-20">
         <section id="services" className="light bg-red-100 lg:w-[95%] w-full h-fit m-auto rounded-xl flex flex-col justify-center items-start lg:px-20 px-6 py-20 gap-10 dark:bg-gray-800">

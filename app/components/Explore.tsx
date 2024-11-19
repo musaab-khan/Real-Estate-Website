@@ -1,9 +1,9 @@
 'use client'
 import React from 'react'
-import visibilityHook from './visibilityHook';
+import useVisibilityHook from './useVisibilityHook';
 
 const Explore = () => {
-    const visibleElements=visibilityHook('.exploreZoomer',0.735)
+    const visibleElements=useVisibilityHook('.exploreZoomer',0.735)
 
   return (
     <div className="light bg-transparent dark:bg-black" id='explore'>
@@ -30,7 +30,7 @@ const Explore = () => {
                 </div>
                 <div className={`${visibleElements[3]?'translate-y-0':'translate-y-[100%]'} exploreZoomer flex justify-center lg:items-center gap-8 w-full transition-all duration-[2s] ease`}>
                     <h1 className="text-black text-7xl font-semibold dark:text-white">6K</h1>
-                    <h1 className="text-lg text-gray-600 dark:text-white">CLIENTS <br/>WE'VE SERVED</h1>
+                    <h1 className="text-lg text-gray-600 dark:text-white">CLIENTS <br/>WE&apos;VE SERVED</h1>
                 </div>
         </div>
     </section>

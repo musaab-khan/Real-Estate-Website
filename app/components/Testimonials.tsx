@@ -1,10 +1,10 @@
 'use client'
 import React from 'react'
 import TestimonialsCard from './TestimonialsCard'
-import visibilityHook from './visibilityHook'
+import useVisibilityHook from './useVisibilityHook'
 
 const Testimonials = () => {
-  const visibleElements=visibilityHook('.testimonialZoomer',0.735);
+  const visibleElements=useVisibilityHook('.testimonialZoomer',0.735);
   return (
 
     <div className="light bg-transparent">

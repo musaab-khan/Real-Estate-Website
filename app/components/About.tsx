@@ -1,10 +1,10 @@
 'use client';
-import visibilityHook from './visibilityHook';
-import React, { useEffect, useState } from 'react';
+import useVisibilityHook from './useVisibilityHook';
+import React from 'react';
 
 
 const About = () => {
-  const visibleElements=visibilityHook('.zoomer',0.735);
+  const visibleElements=useVisibilityHook('.zoomer',0.735);
 
   return (
     <section id="about" className=" w-full m-auto lg:px-40 px-10 py-20 grid lg:grid-cols-2 grid-cols-1 justify-center items-center gap-10">

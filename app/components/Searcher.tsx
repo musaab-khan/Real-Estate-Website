@@ -1,9 +1,9 @@
 'use client'
 import React from 'react'
-import visibilityHook from './visibilityHook';
+import useVisibilityHook from './useVisibilityHook';
 
 const Searcher = () => {
-  const visibleElements=visibilityHook('#form',0.735);
+  const visibleElements=useVisibilityHook('#form',0.735);
 
   return (
     <div className={`light bg-white z-10 dark:bg-black `} id='searchProperty'>

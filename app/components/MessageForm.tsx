@@ -1,9 +1,9 @@
 'use client'
 import React from 'react'
-import visibilityHook from './visibilityHook';
+import useVisibilityHook from './useVisibilityHook';
 
 const MessageForm = () => {
-  const visibleElements=visibilityHook('.formZoomer',0.735);
+  const visibleElements=useVisibilityHook('.formZoomer',0.735);
   return (
     <div className="light bg-transparent pb-20">
         <section id="contact" className="light dark:bg-gray-800 bg-red-100 lg:w-[95%] w-full h-fit m-auto rounded-xl grid lg:grid-cols-2 grid-cols-1 justify-center items-center lg:px-36 px-6 py-20 gap-10">

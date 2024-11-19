@@ -1,9 +1,9 @@
 'use client'
 import React from 'react'
 import PropertiesCard from './PropertiesCard'
-import visibilityHook from './visibilityHook'
+import useVisibilityHook from './useVisibilityHook'
 const Properties = () => {
-  const visibleElements=visibilityHook('.propertyZoomer',0.735)
+  const visibleElements=useVisibilityHook('.propertyZoomer',0.735)
 
   return (
     <div className="light bg-transparent">

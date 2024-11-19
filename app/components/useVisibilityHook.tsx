@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const visibilityHook = (selector: string='.zoomer', threshold: number) => {
+const useVisibilityHook = (selector: string='.zoomer', threshold: number) => {
   const [visibleElements, setVisibleElements] = useState<Record<string, boolean>>({});
 
   const handleScroll = () => {
@@ -30,4 +30,4 @@ const visibilityHook = (selector: string='.zoomer', threshold: number) => {
   return visibleElements;
 };
 
-export default visibilityHook;
+export default useVisibilityHook;
