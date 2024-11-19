@@ -10,12 +10,11 @@ import MessageForm from "./components/MessageForm";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
 import ToggleMode from "./components/ToggleMode";
-import Sample from "./components/Sample";
-import Checker from './components/Checker'
 
 export default function Home() {
+
   return (
-    <div className="bg-white">
+    <div className="bg-white dark:bg-black">
       <Navbar></Navbar>
       <Hero></Hero>
       <Searcher></Searcher>
@@ -28,8 +27,6 @@ export default function Home() {
       <Footer></Footer>
       <BackToTop></BackToTop>
       <ToggleMode></ToggleMode>
-      <Checker></Checker>
-      <Sample></Sample>
     </div>
   );
 }

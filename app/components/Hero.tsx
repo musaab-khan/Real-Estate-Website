@@ -3,7 +3,8 @@ import React from 'react';
 const Hero = () => {
 
   return (
-    <section
+    <div className="w-100 light dark:bg-black">
+      <section
       id="hero"
       className="w-[95%] h-[600px] m-auto bg-cover bg-center rounded-xl flex justify-center flex-col items-start lg:px-28 px-10 gap-7 z-20"
       style={{
@@ -21,6 +22,7 @@ const Hero = () => {
         and clients navigate the process of finding or selling a home.
       </p>
     </section>
+    </div>
   );
 };
 

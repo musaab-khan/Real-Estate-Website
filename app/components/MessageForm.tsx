@@ -3,7 +3,7 @@ import React from 'react'
 const MessageForm = () => {
   return (
     <div className="light bg-transparent pb-20">
-        <section id="contact" className="light bg-red-100 lg:w-[95%] w-full h-fit m-auto rounded-xl grid lg:grid-cols-2 grid-cols-1 justify-center items-center lg:px-36 px-6 py-20 gap-10">
+        <section id="contact" className="light dark:bg-gray-800 bg-red-100 lg:w-[95%] w-full h-fit m-auto rounded-xl grid lg:grid-cols-2 grid-cols-1 justify-center items-center lg:px-36 px-6 py-20 gap-10">
             <div  className="bg-white dark:bg-black p-10 flex flex-col justify-center items-start gap-4 rounded-xl ">
                 <h1 className="text-2xl text-black font-semibold dark:text-white">Send us a message today</h1>
                 <input type="text" placeholder="Enter your full name here" className="w-full px-6 py-3 border-2 border-gray-200 rounded-xl"/>

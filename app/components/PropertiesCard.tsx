@@ -9,7 +9,7 @@ interface PropertiesCardProps {
 
 const PropertiesCard: React.FC<PropertiesCardProps> = ({ imageSrc,propClass }) => {
   return (
-    <div className={`bg-white dark:bg-white rounded-xl w-full ${propClass} `}>
+    <div className={`bg-white dark:bg-gray-800 rounded-xl w-full ${propClass} `}>
         <div id="image-box" className="bg-cover bg-center h-[250px] rounded-xl p-4 flex flex-col justify-between items-end" style={{ backgroundImage: `url(${imageSrc})` }}>
             <div id="top" className="flex justify-between items-end w-full">
                 <div>
@@ -31,28 +31,28 @@ const PropertiesCard: React.FC<PropertiesCardProps> = ({ imageSrc,propClass }) =
                 </div></div>
             </div>
             <div className="px-6 py-3 flex flex-col justify-center items-start gap-2 w-full">
-                <h1 className="text-xl text-black font-semibold dark:text-black">Villa with Amazing View</h1>
-                <h1 className="text-2xl text-red-600 font-bold dark:text-red-600">$ 213.23</h1>
-                <p className="dark:text-black">Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood</p>
+                <h1 className="text-xl text-black font-semibold dark:text-white">Villa with Amazing View</h1>
+                <h1 className="text-2xl text-red-600 font-bold dark:text-white">$ 213.23</h1>
+                <p className="dark:text-white">Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood</p>
                 <div id="icons" className="flex justify-center items-start gap-4">
                     <div className="flex justify-center items-center gap-2">
                         <Image width={50} height={50}src='./assets/bath.svg' className="size-4 text-white" alt=""></Image>
-                        <h1 className="dark:text-black">3</h1>
+                        <h1 className="dark:text-white">3</h1>
                     </div>
                     <div className="flex justify-center items-center gap-2">
                         <Image width={50} height={50}src='./assets/bed.svg' className="size-4 text-white" alt=""></Image>
-                        <h1 className="dark:text-black">4</h1>
+                        <h1 className="dark:text-white">4</h1>
                     </div>
                     <div className="flex justify-center items-center gap-2">
                         <Image width={50} height={50}src='./assets/area.svg' className="size-4 text-white" alt=""></Image>
-                        <h1 className="dark:text-black">250 sq ft</h1>
+                        <h1 className="dark:text-white">250 sq ft</h1>
                     </div>
                 </div>
                 <div className="w-full h-[1px] bg-gray-200 mt-8"></div>
                 <div id="owner-info" className="flex justify-between items-center w-full mt-2">
                     <div className="flex justify-center items-center gap-2">
                         <Image width={50} height={50}src='./assets/profile.svg' className="size-4 text-white" alt=""></Image>
-                        <h1 className="dark:text-black">Alice adams</h1>
+                        <h1 className="dark:text-white">Alice adams</h1>
                     </div>
                     <div className="flex justify-center items-center gap-4">
                         <div className="p-2 border-2 border-gray-200 hover:bg-black cursor-pointer transform hover:scale-110 transition-transform duration-300">

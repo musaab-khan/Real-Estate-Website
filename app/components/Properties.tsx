@@ -9,8 +9,8 @@ const Properties = () => {
     <div className="light bg-transparent">
         <section id="properties" className="lg:w-[90%]  m-auto lg:px-20 px-6 py-20 w-full flex flex-col justify-center items-start gap-10">
             <div className="flex flex-col justify-center items-start gap-4">
-                <h1 className={`${visibleElements[0]?'animate-zoomIn':'animate-zoomOut'} propertyZoomer text-red-500 dark:text-red-500`}>PROPERTIES</h1>
-                <h1 className={`${visibleElements[1]?'animate-zoomIn':'animate-zoomOut'} propertyZoomer text-black text-4xl font-semibold dark:text-black`}>Explore the latest<br/>properties available</h1>
+                <h1 className={`${visibleElements[0]?'animate-zoomIn':'animate-zoomOut'} propertyZoomer text-red-500 dark:text-white`}>PROPERTIES</h1>
+                <h1 className={`${visibleElements[1]?'animate-zoomIn':'animate-zoomOut'} propertyZoomer text-black text-4xl font-semibold dark:text-white`}>Explore the latest<br/>properties available</h1>
             </div>
             <div id="grid-box" className="w-full grid lg:grid-cols-3 grid-cols-1 justify-center items-center gap-8">
                <PropertiesCard imageSrc='./assets/card.webp' propClass={`${visibleElements[2]?'animate-zoomIn':'animate-zoomOut'} propertyZoomer`}></PropertiesCard>
