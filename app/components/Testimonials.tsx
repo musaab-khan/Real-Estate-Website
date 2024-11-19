@@ -14,12 +14,12 @@ const Testimonials = () => {
                 <h1  className={`text-black dark:text-white text-[40px] font-semibold leading-10 testimonialZoomer ${visibleElements[1]?'animate-zoomIn':'animate-zoomOut'}`}>What are our clients <br/>saying about us</h1>
             </div>
             <div id="clients-box" className="grid lg:grid-cols-3 grid-cols-1 justify-center items-center gap-8 w-full">
-                <TestimonialsCard imageSrc='/assets/test1.png' propClass={`${visibleElements[2]?'animate-zoomIn':'animate-zoomOut'} testimonialZoomer`}></TestimonialsCard>
                 <TestimonialsCard imageSrc='/assets/test1.png' propClass={`${visibleElements[2]?'animate-zoomIn':'animate-zoomOut'}`}></TestimonialsCard>
-                <TestimonialsCard imageSrc='/assets/test1.png' propClass={`${visibleElements[2]?'animate-zoomIn':'animate-zoomOut'}`}></TestimonialsCard>
-                <TestimonialsCard imageSrc='/assets/test1.png' propClass={`${visibleElements[3]?'animate-zoomIn':'animate-zoomOut'} testimonialZoomer`}></TestimonialsCard>
-                <TestimonialsCard imageSrc='/assets/test1.png' propClass={`${visibleElements[3]?'animate-zoomIn':'animate-zoomOut'} `}></TestimonialsCard>
-                <TestimonialsCard imageSrc='/assets/test1.png' propClass={`${visibleElements[3]?'animate-zoomIn':'animate-zoomOut'} `}></TestimonialsCard>
+                <TestimonialsCard imageSrc='/assets/test1.png' propClass={`${visibleElements[3]?'animate-zoomIn':'animate-zoomOut'}`}></TestimonialsCard>
+                <TestimonialsCard imageSrc='/assets/test1.png' propClass={`${visibleElements[4]?'animate-zoomIn':'animate-zoomOut'}`}></TestimonialsCard>
+                <TestimonialsCard imageSrc='/assets/test1.png' propClass={`${visibleElements[5]?'animate-zoomIn':'animate-zoomOut'}`}></TestimonialsCard>
+                <TestimonialsCard imageSrc='/assets/test1.png' propClass={`${visibleElements[6]?'animate-zoomIn':'animate-zoomOut'} `}></TestimonialsCard>
+                <TestimonialsCard imageSrc='/assets/test1.png' propClass={`${visibleElements[7]?'animate-zoomIn':'animate-zoomOut'} `}></TestimonialsCard>
             </div>
         </section>
     </div>

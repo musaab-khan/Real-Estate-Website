@@ -12,13 +12,13 @@ const Services = () => {
                 <h1 className={`${visibleElements[0]?'animate-zoomIn':'animate-zoomOut'} text-red-500 dark:text-white serviceZoomer `}>OUR SERVICES</h1>
                 <h1 className={`${visibleElements[1]?'animate-zoomIn':'animate-zoomOut'} serviceZoomer text-black text-[40px] font-semibold leading-10 dark:text-white `}>Top real estate<br/>services available</h1>
             </div>
-            <div id="service-box" className="grid lg:grid-cols-3 grid-cols-1 justify-center items-center gap-8">
-                <ServicesCard imageSrc='/assets/servicesCard.svg' propClass={`${visibleElements[2]?'animate-zoomIn':'animate-zoomOut'} serviceZoomer`}></ServicesCard>
+            <div id="service-box" className="grid lg:grid-cols-3 lg:w-[100%] lg:m-0 w-[80vw] m-auto grid-cols-1 justify-center items-center gap-8">
                 <ServicesCard imageSrc='/assets/servicesCard.svg' propClass={`${visibleElements[2]?'animate-zoomIn':'animate-zoomOut'}`}></ServicesCard>
-                <ServicesCard imageSrc='/assets/servicesCard.svg' propClass={`${visibleElements[2]?'animate-zoomIn':'animate-zoomOut'}`}></ServicesCard>
-                <ServicesCard imageSrc='/assets/servicesCard.svg' propClass={`${visibleElements[3]?'animate-zoomIn':'animate-zoomOut'} serviceZoomer`}></ServicesCard>
-                <ServicesCard imageSrc='/assets/servicesCard.svg' propClass={`${visibleElements[3]?'animate-zoomIn':'animate-zoomOut'} serviceZoomer`}></ServicesCard>
-                <ServicesCard imageSrc='/assets/servicesCard.svg' propClass={`${visibleElements[3]?'animate-zoomIn':'animate-zoomOut'} serviceZoomer`}></ServicesCard>
+                <ServicesCard imageSrc='/assets/servicesCard.svg' propClass={`${visibleElements[3]?'animate-zoomIn':'animate-zoomOut'}`}></ServicesCard>
+                <ServicesCard imageSrc='/assets/servicesCard.svg' propClass={`${visibleElements[4]?'animate-zoomIn':'animate-zoomOut'}`}></ServicesCard>
+                <ServicesCard imageSrc='/assets/servicesCard.svg' propClass={`${visibleElements[5]?'animate-zoomIn':'animate-zoomOut'}`}></ServicesCard>
+                <ServicesCard imageSrc='/assets/servicesCard.svg' propClass={`${visibleElements[6]?'animate-zoomIn':'animate-zoomOut'}`}></ServicesCard>
+                <ServicesCard imageSrc='/assets/servicesCard.svg' propClass={`${visibleElements[7]?'animate-zoomIn':'animate-zoomOut'}`}></ServicesCard>
             </div>
         </section>
     </div>

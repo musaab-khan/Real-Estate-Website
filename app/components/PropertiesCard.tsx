@@ -9,6 +9,7 @@ interface PropertiesCardProps {
 
 const PropertiesCard: React.FC<PropertiesCardProps> = ({ imageSrc,propClass }) => {
   return (
+    <div className="propertyZoomer">
     <div className={`bg-white dark:bg-gray-800 rounded-xl w-full ${propClass} `}>
         <div id="image-box" className="bg-cover bg-center h-[250px] rounded-xl p-4 flex flex-col justify-between items-end" style={{ backgroundImage: `url(${imageSrc})` }}>
             <div id="top" className="flex justify-between items-end w-full">
@@ -67,6 +68,7 @@ const PropertiesCard: React.FC<PropertiesCardProps> = ({ imageSrc,propClass }) =
                 </div>
             </div>
         </div>
+    </div>
     </div>
   )
 }

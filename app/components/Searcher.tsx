@@ -6,7 +6,7 @@ const Searcher = () => {
   const visibleElements=useVisibilityHook('#form',0.735);
 
   return (
-    <div className={`light bg-white z-10 dark:bg-black `} id='searchProperty'>
+    <div className={`light bg-transparent z-10 dark:bg-black `} id='searchProperty'>
         <div id="form" className={`light bg-white lg:w-[70%] w-full m-auto grid lg:grid-cols-4 grid-cols-1 justify-center items-center gap-6 p-8 rounded-xl -mt-14 ${visibleElements[0] ? "animate-zoomIn" : "animate-zoomOut"} dark:bg-gray-800`}>
             <div className="w-full">
                 <h1 className="text-black font-semibold dark:text-white">LOCATION</h1>
