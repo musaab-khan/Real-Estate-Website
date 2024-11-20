@@ -9,8 +9,9 @@ const About = () => {
 
   return (
     <section id="about" className=" w-full m-auto lg:px-40 px-10 py-20 grid lg:grid-cols-2 grid-cols-1 justify-center items-center gap-10">
-      <div className="aboutZoomer flex xl:justify-center xl:items-center">
-        <Image width={1} height={1} alt='' layout='responsive' className={`${visibleElements[0]?'animate-zoomIn':'animate-zoomOut'} w-[100%] h-fit  lg:w-[500px] lg:h-[100%] bg-cover bg-center rounded-xl `}src="/assets/About.jpg" />
+      <div className='aboutZoomer flex-shrink xl:m-auto '>
+      <Image layout='intrinsic' width={500} height={600} alt='' src='/assets/About.jpg' className={`rounded-2xl ${visibleElements[0] ? `animate-zoomIn` : 'animate-zoomOut'}`}/>
+
       </div>
       <div className="flex flex-col justify-center items-start gap-8">
         <h1
